@@ -1,0 +1,63 @@
+body {
+	background-color:#2E3440;
+}
+
+header {
+	background-color: #3B4252;
+	color: #E5E9F0;
+	border: 2px solid black;
+	text-align: center;
+}
+p {
+	word-break:break-all;
+}
+
+.flexbox-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flexbox-items {	
+	background-color: #434c5e;
+	color: #E5E9F0;
+	border: 1px solid black;
+	min-height: 300px;
+	max-width: 50%;
+
+	flex-grow: 1;
+}
+.flexbox-items-tool {
+	border: 1px solid black;
+	margin: 2%;
+}
+	.flexbox-items-tool article {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	.flexbox-items-tool input {
+		width: 90%;
+		padding-bottom: 30px;
+		margin-left: 2px;
+	}
+	.flexbox-items-tool button{
+		margin:1%;
+	}
+	#ascii {
+		background-color:white;
+		color:black;
+		border:1px solid black;
+		max-width: 95%;
+		padding-bottom: 30px;
+		margin-left: 2px;
+	}
+
+
+.flexbox-items-info {
+	border: 1px solid black;
+	margin: 2%;
+
+}
+	.flexbox-items-info p {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
