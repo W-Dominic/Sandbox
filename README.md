@@ -1,4 +1,4 @@
-#List of Side Projects
+**List of Side Projects**
 
 - AngularTest | Fireship Angular tutorial
 
