@@ -1,3 +1,5 @@
+#List of Side Projects
+
 AngularTest
     -Fireship Angular tutorial
 
