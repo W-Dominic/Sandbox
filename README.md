@@ -1,14 +1,11 @@
-AngularTest
-    -Fireship Angular tutorial
+**List of Side Projects**
 
-Ciphers
-    -Some tests with different ciphers/encryption
+- AngularTest | Fireship Angular tutorial
 
-PacketSniffer
-    -Python Sockets based network traffic analysis tool
+- Ciphers | Some tests with different ciphers/encryption
 
-PostgreSQL
-    -Following along with: PracticalSQL - Anthony DeBarros - 2018
+- PacketSniffer | Python Sockets based network traffic analysis tool
+
+- PracticalSQL | Following along with: PracticalSQL - Anthony DeBarros - 2018
     
-SnykDEMO
-    -Following along with node-js goof, the intentionally vulnerable web app
+- SnykDEMO | Following along with node-js goof, the intentionally vulnerable web app
