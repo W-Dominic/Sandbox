@@ -9,3 +9,5 @@
 - PracticalSQL | Following along with: PracticalSQL - Anthony DeBarros - 2018
     
 - SnykDEMO | Following along with node-js goof, the intentionally vulnerable web app
+
+- Rust | Following allong with "The Rust Programming Language" & "Rust for Rustaceans"
