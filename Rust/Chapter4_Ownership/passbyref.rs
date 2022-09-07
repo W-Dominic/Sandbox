@@ -12,6 +12,11 @@ fn main(){
     let len : usize = calc_len(&s1);
     
     println!("The length of '{}' is {}", s1, len);
+    
+    //mutable ref example
+    let mut s2 = String::from("hello");
+    modify(&mut s2);
+    println!("Modified to '{}'", s2);
 }
 
 fn add(x : i32, y : i32) -> i32 {
@@ -19,5 +24,12 @@ fn add(x : i32, y : i32) -> i32 {
 }
 
 fn calc_len(s: &String) -> usize {
+    println!("The value of the ref s is {}", s);
+    println!("The value of the deref s is {}", *s);
+    //s.push_str("dowanfoicwainc");//by default refs are immutable
     s.len()
+}
+
+fn modify(s: &mut String) {
+    s.push_str(", world!");
 }
