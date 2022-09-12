@@ -1,0 +1,2 @@
+some text for testing
+rust is a pretty cool language
