@@ -1,3 +1,5 @@
+pub mod testing;
+
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -23,6 +25,13 @@ impl Guess {
         Guess { value }
     }
 }
+
+
+// testing integration tests
+pub fn mult_two(val: i32) -> i32 {
+    val * 2
+} 
+
 
 #[cfg(test)]
 mod tests {
