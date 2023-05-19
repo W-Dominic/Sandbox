@@ -26,5 +26,4 @@ func TestListener(t *testing.T) {
             // handle connection here
         }(conn)
     }
-
 }
