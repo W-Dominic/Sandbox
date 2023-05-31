@@ -12,6 +12,7 @@
 
 # Security / Cryptography
 - openssl | playing with the openssl c++ library 
+- SeriousCryptography | Reading "Serious Cryptography" following code examples
 - SnykDEMO | Following along with node-js goof, the intentionally vulnerable web app
 - Ciphers | Some tests with different ciphers/encryption
 
