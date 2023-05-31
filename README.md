@@ -1,13 +1,24 @@
 **List of Side Projects**
 
-- AngularTest | Fireship Angular tutorial
+# Systems Programming
+- Rust | "The Rust Programming Language" book, Concurrency Example Problems
+- Go | Concurrency Examples, Language Basics
+- Polars | High Performance Data Frame Library written in rust
+- writing_an_interpreter_in_go | Reading the book "Writing an Interpreter in Go" by Thorsten Ball
 
+# Networking
+- Networking | Reading "Network Programming with Go" by Adam Woodbeck, and following code examples
+- PacketSniffer | Personal side project, Command line wireshark-like tool written in python.
+
+# Security / Cryptography
+- openssl | playing with the openssl c++ library 
+- SnykDEMO | Following along with node-js goof, the intentionally vulnerable web app
 - Ciphers | Some tests with different ciphers/encryption
 
-- PacketSniffer | Python Sockets based network traffic analysis tool
+# Web / Frontend
+- AngularBasics | Fireship Angular tutorial
+- React & React Sandbox | sample react tutorial apps
+- VueTutorial | Vuejs basics and tutorial
 
-- PracticalSQL | Following along with: PracticalSQL - Anthony DeBarros - 2018
-    
-- SnykDEMO | Following along with node-js goof, the intentionally vulnerable web app
+ 
 
-- Rust | Following allong with "The Rust Programming Language" & "Rust for Rustaceans"
