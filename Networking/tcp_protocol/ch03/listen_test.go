@@ -1,4 +1,4 @@
-package main
+package ch03
 import (
     "net"
     "testing"
@@ -16,9 +16,10 @@ func TestListener(t *testing.T) {
     
     // Accept incoming TCP connections
     for {
-        conn, err :+ listener.Accept()
+        conn, err := listener.Accept()
         if err != nil {
-            return err
+            t.Errorf("Error: %v", err)
+            return 
         }
         // go routine for handling connection
         go func(c net.Conn) {
