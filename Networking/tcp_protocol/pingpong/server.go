@@ -11,6 +11,7 @@ func main() {
         fmt.Errorf("Error: %w\n", err)
         return
     }
+    done := make(chan struct{})
     go func() {
         conn, err := listener.Accept()
         if err != nil {
@@ -27,6 +28,7 @@ func main() {
             return
         }
         fmt.Printf("Recieved on %s: %s\n", listener.Addr().String(), buf[:n]) 
+        done <- struct{}{}
     }()
     
     // Initiate Connnection to the listner
@@ -44,7 +46,8 @@ func main() {
         fmt.Errorf("Error: %w\n", err)
         return
     }
-
+    
+    <-done
     listener.Close()
 
 }
