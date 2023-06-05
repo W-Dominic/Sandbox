@@ -28,6 +28,13 @@ func main() {
             return
         }
         fmt.Printf("Recieved on %s: %s\n", listener.Addr().String(), buf[:n]) 
+
+        // Send back a pong message
+        n, err = conn.Write([]byte("Pong!!!!!"))
+        if err != nil {
+            fmt.Errorf("Error: %w\n", err)
+            return
+        }
         done <- struct{}{}
     }()
     
@@ -46,7 +53,15 @@ func main() {
         fmt.Errorf("Error: %w\n", err)
         return
     }
-    
+    // Read Pong message
+    buf := make([]byte, 1024)
+    n, err = conn.Read(buf)
+    if err != nil {
+        fmt.Errorf("Error: %w\n", err)
+        return
+    }
+    fmt.Printf("Recieved on %s: %s\n", listener.Addr().String(), buf[:n]) 
+
     <-done
     listener.Close()
 
