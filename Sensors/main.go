@@ -14,7 +14,7 @@ func main() {
         })
     })
     
-    r.GET("/sensors/", func(c *gin.Context) {
+    r.GET("/sensors", func(c *gin.Context) {
         // calls 'sensors' and saves output
         cmd := exec.Command("sensors")
         outputBytes, err := cmd.Output()
